@@ -1,9 +1,10 @@
 import { useForm } from 'react-hook-form';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { toast } from 'react-toastify';
 
 const AddTouristsSpot = () => {
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = (data) => {
         console.log(data);
@@ -21,6 +22,12 @@ const AddTouristsSpot = () => {
         .then(res => res.json())
         .then(data => {
             console.log(data);
+            if(data.insertedId) {
+                toast.success('Tourists Spot created Successfully');
+                reset();
+            } else {
+                toast.error('Tourist Spot is not created! Try Again')
+            }
         })
     };
 
