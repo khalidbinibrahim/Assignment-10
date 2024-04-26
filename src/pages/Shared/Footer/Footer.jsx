@@ -17,6 +17,7 @@ const Footer = () => {
                     <NavLink to="/add_tourists_spot" className="link link-hover text-white hover:text-[#FBB804]">Add Tourists Spot</NavLink>
                     <NavLink to="/all_tourists_spot" className="link link-hover text-white hover:text-[#FBB804]">All Tourists Spot</NavLink>
                     <NavLink to="/my_list" className="link link-hover text-white hover:text-[#FBB804]">My List</NavLink>
+                    <NavLink to="/login" className="link link-hover text-white hover:text-[#FBB804]">Login</NavLink>
                 </nav>
                 <nav>
                     <a className="link link-hover text-white hover:text-[#FBB804]">Suites</a>
