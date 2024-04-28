@@ -12,10 +12,10 @@ const AddTouristsSpot = () => {
         console.log(image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time, user_email, user_name)
         const touristSpot = { image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time, user_email, user_name };
 
-        fetch('http://localhost:5000/add_tourists_spot', {
+        fetch('http://localhost:5000/tourist_spots', {
             method: "POST",
             headers: {
-                "content-type": 'application/json'
+                'content-Type': 'application/json'
             },
             body: JSON.stringify(touristSpot)
         })
