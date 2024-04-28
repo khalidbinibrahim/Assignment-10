@@ -3,7 +3,7 @@ import { IoMdTime } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 
 const TouristSpot = ({ touristSpot }) => {
-    const { id, tourists_spot_name, average_cost, total_visitors_per_year, travel_time, seasonality, image } = touristSpot;
+    const { _id, tourists_spot_name, average_cost, total_visitors_per_year, travel_time, seasonality, image } = touristSpot;
 
     return (
         <div className="border-2 border-gray-300 rounded-xl">
@@ -24,7 +24,7 @@ const TouristSpot = ({ touristSpot }) => {
                 </div>
 
                 <div>
-                    <NavLink to={`/tourist_spot/${id}`} className="btn w-full bg-[#FBB804] font-montserrat text-black font-bold px-7 text-center rounded-md border-none">View Details</NavLink>
+                    <NavLink to={`/tourist_spot/${_id}`} className="btn w-full bg-[#FBB804] font-montserrat text-black font-bold px-7 text-center rounded-md border-none">View Details</NavLink>
                 </div>
             </div>
         </div>

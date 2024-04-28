@@ -45,13 +45,6 @@ const Header = () => {
                             <SwiperSlide>
                                 <div className="bg-[url('https://images.unsplash.com/photo-1622396090075-ab6b8396fe9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Sundarban</p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1622396090075-ab6b8396fe9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
-                                    <div className="title" data-swiper-parallax="-300">
                                         <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Cox Bazar</p>
                                     </div>
                                 </div>
@@ -60,6 +53,13 @@ const Header = () => {
                                 <div className="bg-[url('https://images.unsplash.com/photo-1622396090075-ab6b8396fe9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
                                         <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Rangamati</p>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_I74Gp9AwFSsXuzmo2Og_rp2NcotM24dOw&s')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                    <div className="title" data-swiper-parallax="-300">
+                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Sundarban</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
