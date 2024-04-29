@@ -9,7 +9,7 @@ const UpdateTouristSpot = () => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await fetch(`https://assignment-10-server-bkec7iu7p-khalid-bin-ibrahims-projects.vercel.app/tourist_spots/${id}`, {
+            const response = await fetch(`https://assignment-10-server-blue-iota.vercel.app/tourist_spots/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

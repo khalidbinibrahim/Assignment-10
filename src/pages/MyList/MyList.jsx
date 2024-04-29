@@ -10,7 +10,7 @@ const MyList = () => {
         const UserTouristSpots = async () => {
             try {
                 if (user) {
-                    const response = await fetch(`https://assignment-10-server-bkec7iu7p-khalid-bin-ibrahims-projects.vercel.app/user_tourist_spots/${user.uid}`);
+                    const response = await fetch(`https://assignment-10-server-blue-iota.vercel.app/user_tourist_spots/${user.uid}`);
                     console.log(response.ok)
                     if (!response.ok) {
                         throw new Error('Failed to fetch user tourist spots');
@@ -28,7 +28,7 @@ const MyList = () => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`https://assignment-10-server-bkec7iu7p-khalid-bin-ibrahims-projects.vercel.app/tourist_spots/${id}`, {
+            const response = await fetch(`https://assignment-10-server-blue-iota.vercel.app/tourist_spots/${id}`, {
                 method: 'DELETE',
             });
             if (!response.ok) {
@@ -39,7 +39,7 @@ const MyList = () => {
             console.error('Error deleting tourist spot:', error.message);
         }
     };
-    console.log(userTouristSpots);
+    
     return (
         <div>
             <h1>Your List Here!</h1>

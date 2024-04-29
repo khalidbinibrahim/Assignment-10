@@ -1,17 +1,24 @@
 import { useState, useEffect } from "react";
 import TouristSpot from "./TouristsSpots/TouristSpot";
-import { useLoaderData } from "react-router-dom";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
 const AllTouristsSpot = () => {
-    const allTouristsSpot = useLoaderData();
+    const [allTouristsSpot, setAllTouristsSpot] = useState([]);
     const [sortedTouristSpots, setSortedTouristSpots] = useState([...allTouristsSpot]);
     const [sortOrder, setSortOrder] = useState("asc");
 
     useEffect(() => {
         Aos.init({ duration: 1000 });
     }, []);
+
+    useEffect(() => {
+        fetch('https://assignment-10-server-blue-iota.vercel.app/tourist_spots', {
+            mode: "no-cors"
+        })
+        .then(res => res.json())
+        .then(data => setAllTouristsSpot(data))
+    }, [])
 
     useEffect(() => {
         const sorted = [...allTouristsSpot].sort((a, b) => {
