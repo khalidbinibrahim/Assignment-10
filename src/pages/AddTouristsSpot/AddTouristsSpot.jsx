@@ -12,26 +12,27 @@ const AddTouristsSpot = () => {
     const onSubmit = (data) => {
         data.country_name = country;
         console.log(data);
-        const { image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time, user_email, user_name } = data;
-        console.log(image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time, user_email, user_name)
-        const touristSpot = { image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time, user_email, user_name };
+        const { image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time } = data;
+        console.log(image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time )
+        const touristSpot = { image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time };
 
         fetch('https://assignment-10-server-blue-iota.vercel.app/tourist_spots', {
-            mode: "no-cors",
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(touristSpot)
         })
-            .then(res => res.json())
+            .then(res => {
+                res.json();
+            })
             .then(data => {
                 console.log(data);
                 if (data.insertedId) {
                     toast.success('Tourists Spot created Successfully');
                     reset();
                 } else {
-                    toast.error('Tourist Spot is not created! Try Again')
+                    toast.error('Tourist Spot is not created! Try Again');
                 }
             })
     };
@@ -134,30 +135,12 @@ const AddTouristsSpot = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <TextField
-                        id="user_email"
-                        label="User Email"
-                        variant="standard"
-                        fullWidth
-                        {...register('user_email', { required: true })}
-                    />
-                </div>
-                <div className="form-group">
-                    <TextField
-                        id="user_name"
-                        label="User Name"
-                        variant="standard"
-                        fullWidth
-                        {...register('user_name', { required: true })}
-                    />
-                </div>
-                <div className="form-group">
                     <button className='btn w-full bg-[#FBB804] font-montserrat text-black font-bold px-7 text-center rounded-md border-none'>
                         Add
                     </button>
                 </div>
             </form>
-            </div>
+        </div>
     );
 };
 

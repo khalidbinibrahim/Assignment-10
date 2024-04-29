@@ -11,7 +11,6 @@ const MyList = () => {
             try {
                 if (user) {
                     const response = await fetch(`https://assignment-10-server-blue-iota.vercel.app/user_tourist_spots/${user.uid}`);
-                    console.log(response.ok)
                     if (!response.ok) {
                         throw new Error('Failed to fetch user tourist spots');
                     }

@@ -13,9 +13,7 @@ const AllTouristsSpot = () => {
     }, []);
 
     useEffect(() => {
-        fetch('https://assignment-10-server-blue-iota.vercel.app/tourist_spots', {
-            mode: "no-cors"
-        })
+        fetch('https://assignment-10-server-blue-iota.vercel.app/tourist_spots')
         .then(res => res.json())
         .then(data => setAllTouristsSpot(data))
     }, [])
