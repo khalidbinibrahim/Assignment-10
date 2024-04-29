@@ -54,7 +54,8 @@ const router = createBrowserRouter([
 
             {
                 path: '/update_tourist_spot/:id',
-                element: <PrivateRoute><UpdateTouristSpot /></PrivateRoute>
+                element: <PrivateRoute><UpdateTouristSpot /></PrivateRoute>,
+                loader: () => fetch('https://assignment-10-server-blue-iota.vercel.app/tourist_spots')
             }
         ]
     }    
