@@ -9,6 +9,7 @@ import AllTouristsSpot from "../pages/AllTouristsSpot/AllTouristsSpot"
 import MyList from "../pages/MyList/MyList"
 import PrivateRoute from "./PrivateRoute";
 import TouristSpotDetails from "../pages/AllTouristsSpot/TouristsSpots/TouristSpotDetails";
+import UpdateTouristSpot from "../pages/MyList/UpdateTouristSpot/UpdateTouristSpot";
 const router = createBrowserRouter([
     {
         path: '/',
@@ -50,6 +51,11 @@ const router = createBrowserRouter([
                 path: '/tourist_spot/:id',
                 element: <PrivateRoute><TouristSpotDetails /></PrivateRoute>,
                 loader: () => fetch('https://assignment-10-server-bkec7iu7p-khalid-bin-ibrahims-projects.vercel.app/tourist_spots')
+            },
+
+            {
+                path: '/update_tourist_spot/:id',
+                element: <PrivateRoute><UpdateTouristSpot /></PrivateRoute>
             }
         ]
     }    

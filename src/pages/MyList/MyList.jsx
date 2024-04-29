@@ -1,5 +1,6 @@
 import { useEffect, useState, useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
+import { NavLink } from 'react-router-dom';
 
 const MyList = () => {
     const { user } = useContext(AuthContext);
@@ -59,7 +60,7 @@ const MyList = () => {
                             <td>{touristSpot.location}</td>
                             <td>{touristSpot.category}</td>
                             <td>
-                                <button>Update</button>
+                                <NavLink to="/update_tourist_spot/:id"><button>Update</button></NavLink>
                             </td>
                             <td>
                                 <button onClick={() => handleDelete(touristSpot._id)}>Delete</button>
