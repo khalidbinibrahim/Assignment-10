@@ -38,7 +38,7 @@ const router = createBrowserRouter([
             {
                 path: '/all_tourists_spot',
                 element: <AllTouristsSpot />,
-                loader: () => fetch('http://localhost:5000/tourist_spots')
+                loader: () => fetch('https://assignment-10-server-bkec7iu7p-khalid-bin-ibrahims-projects.vercel.app/tourist_spots')
             },
 
             {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
             {
                 path: '/tourist_spot/:id',
                 element: <PrivateRoute><TouristSpotDetails /></PrivateRoute>,
-                loader: () => fetch('http://localhost:5000/tourist_spots')
+                loader: () => fetch('https://assignment-10-server-bkec7iu7p-khalid-bin-ibrahims-projects.vercel.app/tourist_spots')
             }
         ]
     }    

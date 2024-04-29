@@ -12,7 +12,7 @@ const AddTouristsSpot = () => {
         console.log(image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time, user_email, user_name)
         const touristSpot = { image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time, user_email, user_name };
 
-        fetch('http://localhost:5000/tourist_spots', {
+        fetch('https://assignment-10-server-bkec7iu7p-khalid-bin-ibrahims-projects.vercel.app/tourist_spots', {
             method: "POST",
             headers: {
                 'content-Type': 'application/json'
