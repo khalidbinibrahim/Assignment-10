@@ -24,7 +24,10 @@ const AddTouristsSpot = () => {
             body: JSON.stringify(touristSpot)
         })
             .then(res => {
-                res.json();
+                if (!res.ok) {
+                    throw new Error(`Network response was not ok, status: ${res.status}, statusText: ${res.statusText}`);
+                }
+                return res.json();
             })
             .then(data => {
                 console.log(data);
@@ -35,6 +38,10 @@ const AddTouristsSpot = () => {
                     toast.error('Tourist Spot is not created! Try Again');
                 }
             })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+                toast.error('An error occurred while processing your request. Please try again later.');
+            });
     };
 
     const handleCountryChange = (event) => {

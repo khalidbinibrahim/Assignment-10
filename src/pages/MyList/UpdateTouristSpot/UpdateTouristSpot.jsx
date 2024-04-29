@@ -35,7 +35,7 @@ const UpdateTouristSpot = () => {
                     label="Image URL"
                     variant="standard"
                     fullWidth
-                    {...register('image', { required: true })}
+                    {...register('image')}
                 />
             </div>
             <div className="form-group">
@@ -44,7 +44,7 @@ const UpdateTouristSpot = () => {
                     label="Tourist Spot Name"
                     variant="standard"
                     fullWidth
-                    {...register('tourists_spot_name', { required: true })}
+                    {...register('tourists_spot_name')}
                 />
             </div>
             <div className="form-group">
@@ -53,7 +53,7 @@ const UpdateTouristSpot = () => {
                     label="Country Name"
                     variant="standard"
                     fullWidth
-                    {...register('country_name', { required: true })}
+                    {...register('country_name')}
                 />
             </div>
             <div className="form-group">
@@ -62,7 +62,7 @@ const UpdateTouristSpot = () => {
                     label="Location"
                     variant="standard"
                     fullWidth
-                    {...register('location', { required: true })}
+                    {...register('location')}
                 />
             </div>
             <div className="form-group">
@@ -73,7 +73,7 @@ const UpdateTouristSpot = () => {
                     fullWidth
                     multiline
                     rows={4}
-                    {...register('short_description', { required: true })}
+                    {...register('short_description')}
                 />
             </div>
             <div className="form-group">
@@ -82,7 +82,7 @@ const UpdateTouristSpot = () => {
                     label="Average Cost"
                     variant="standard"
                     fullWidth
-                    {...register('average_cost', { required: true })}
+                    {...register('average_cost')}
                 />
             </div>
             <div className="form-group">
@@ -91,7 +91,7 @@ const UpdateTouristSpot = () => {
                     label="Seasonality"
                     variant="standard"
                     fullWidth
-                    {...register('seasonality', { required: true })}
+                    {...register('seasonality')}
                 />
             </div>
             <div className="form-group">
@@ -100,7 +100,7 @@ const UpdateTouristSpot = () => {
                     label="Travel Time"
                     variant="standard"
                     fullWidth
-                    {...register('travel_time', { required: true })}
+                    {...register('travel_time')}
                 />
             </div>
             <div className="form-group">
@@ -109,7 +109,7 @@ const UpdateTouristSpot = () => {
                     label="Total Visitors Per Year"
                     variant="standard"
                     fullWidth
-                    {...register('total_visitors_per_year', { required: true })}
+                    {...register('total_visitors_per_year')}
                 />
             </div>
             <div className="form-group">
