@@ -4,6 +4,8 @@ import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { toast } from "react-toastify";
 import { Fade } from "react-awesome-reveal";
+import { Tooltip } from 'react-tooltip'
+import 'react-tooltip/dist/react-tooltip.css'
 
 const Navigation = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -54,8 +56,13 @@ const Navigation = () => {
                         <div className="flex gap-2 items-center">
                             <button onClick={handleLogOut} className="btn bg-[#FBB804] text-black font-bold px-7">Log Out</button>
                             <NavLink to="/update_profile">
-                                <img alt="" title={user.displayName} src={user?.photoURL ? user.photoURL : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} className="w-14 h-14 rounded-full" />
+                                <img id="userPhoto" alt="" src={user?.photoURL ? user.photoURL : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} className="w-14 h-14 rounded-full" />
                             </NavLink>
+                            <Tooltip 
+                                anchorId="userPhoto"
+                                place="top"
+                                content={user.displayName}
+                            />
                         </div> :
                         <NavLink to="/login" className="btn bg-[#FBB804] text-black font-bold px-7">Login</NavLink>
                 }

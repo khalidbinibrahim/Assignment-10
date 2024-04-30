@@ -11,7 +11,7 @@ const MyList = () => {
         const fetchUserTouristSpots = async () => {
             if (user) {
                 try {
-                    const response = await fetch('https://assignment-10-server-blue-iota.vercel.app/user_tourist_spots', {
+                    const response = await fetch(`https://assignment-10-server-blue-iota.vercel.app/user_tourist_spots/${user.uid}`, {
                         headers: {
                             Authorization: `Bearer ${user.token}`
                         }
@@ -27,7 +27,7 @@ const MyList = () => {
                 }
             }
         };
-
+    
         fetchUserTouristSpots();
     }, [user]);
 
