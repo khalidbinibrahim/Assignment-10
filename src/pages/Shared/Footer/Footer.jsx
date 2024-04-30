@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div>
-            <footer className="footer p-10 bg-gray-950 text-neutral-content font-poppins">
+        <div className="p-10 bg-gray-950 text-neutral-content font-poppins">
+            <footer className="footer mb-14">
                 <div className="flex flex-col">
                     <div className="flex gap-2 items-center mr-6 text-white text-3xl mb-2">
                         <MdOutlineTravelExplore className="text-4xl" />
@@ -27,6 +27,10 @@ const Footer = () => {
                     <a className="link link-hover text-white hover:text-[#FBB804]">Buildings</a>
                 </nav>
             </footer>
+            <hr />
+            <div className="text-center mt-10">
+                <p>© 2024 TravelTrove, All Rights Reserved</p>
+            </div>
         </div>
     );
 };
