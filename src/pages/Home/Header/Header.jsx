@@ -114,135 +114,135 @@ const Header = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1622396090075-ab6b8396fe9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1584810359583-96fc3448beaa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym9yb2J1ZHVyJTIwdGVtcGxlfGVufDB8fDB8fHww')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Borobudur Temple</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Borobudur Temple</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1622396090075-ab6b8396fe9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1603139793104-5e880b142e4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fEtvbW9kbyUyME5hdGlvbmFsJTIwUGFya3xlbnwwfHwwfHx8MA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
                                         <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Komodo National Park</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1622396090075-ab6b8396fe9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1601844075967-c1376c021732?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UmFqYSUyMEFtcGF0JTIwSXNsYW5kc3xlbnwwfHwwfHx8MA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Raja Ampat Islands</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Raja Ampat Islands</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1622396090075-ab6b8396fe9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://plus.unsplash.com/premium_photo-1700954878958-30363bc9ec5c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8WW9neWFrYXJ0YXxlbnwwfHwwfHx8MA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Yogyakarta</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Yogyakarta</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1574218732130-6b19257fd9db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8S3VhbGElMjBMdW1wdXJ8ZW58MHx8MHx8fDA%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Kuala Lumpur</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Kuala Lumpur</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1506345932350-caeeec3d8895?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1622665645573-b0b5dea09d98?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TGFuZ2thd2l8ZW58MHx8MHx8fDA%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Langkawi</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Langkawi</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1506345932350-caeeec3d8895?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1597141439895-26b45a8cdd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFBlbmFuZ3xlbnwwfHwwfHx8MA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Penang</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Penang</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1506345932350-caeeec3d8895?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1470087167738-6aa485ff65dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2FtZXJvbiUyMEhpZ2hsYW5kc3xlbnwwfHwwfHx8MA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
                                         <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Cameron Highlands</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1506345932350-caeeec3d8895?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1564409972016-2825589beaed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGFtYW4lMjBOZWdhcmElMjBOYXRpb25hbCUyMFBhcmt8ZW58MHx8MHx8fDA%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
                                         <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Taman Negara National Park</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1506345932350-caeeec3d8895?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://plus.unsplash.com/premium_photo-1692731798026-19776d12132a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SGElMjBMb25nJTIwQmF5fGVufDB8fDB8fHww')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Ha Long Bay</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Ha Long Bay</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1506345932350-caeeec3d8895?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1536086845112-89de23aa4772?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SG8lMjBDaGklMjBNaW5oJTIwQ2l0eXxlbnwwfHwwfHx8MA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Ho Chi Minh City</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Ho Chi Minh City</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1506345932350-caeeec3d8895?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1675310381529-d09bbc92cf03?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8SG9pJTIwQW4lMjBBbmNpZW50JTIwVG93bnxlbnwwfHwwfHx8MA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
                                         <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Hoi An Ancient Town</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1506345932350-caeeec3d8895?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1712689589587-d0cb9a54c2db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UGhvbmclMjBOaGElMjBDYXZlc3xlbnwwfHwwfHx8MA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Phong Nha Caves</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Phong Nha Caves</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1660673507748-6b66c15cb96d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://plus.unsplash.com/premium_photo-1661964456515-2c7c7be3627d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWVrb25nJTIwRGVsdGF8ZW58MHx8MHx8fDA%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Mekong Delta</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Mekong Delta</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://plus.unsplash.com/premium_photo-1676517030737-5ac484676ea7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1606231140504-b6ec6cbbbf6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QW5na29yJTIwV2F0fGVufDB8fDB8fHww')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
                                         <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Angkor Wat</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1478059299873-f047d8c5fe1a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1569668723493-80d82b05bad7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U2llbSUyMFJlYXB8ZW58MHx8MHx8fDA%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Siem Reap</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Siem Reap</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1561443883-b04d019d7675?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1594444406267-35a7730c6867?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UGhub20lMjBQZW5ofGVufDB8fDB8fHww')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Phnom Penh</p>
+                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Phnom Penh</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1549294413-26f195200c16?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1704715385714-6a743cea66b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8S2VwfGVufDB8fDB8fHww')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
                                         <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Kep</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-[url('https://images.unsplash.com/photo-1485465053475-dd55ed3894b9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
+                                <div className="bg-[url('https://images.unsplash.com/photo-1522219857201-024625d74598?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEJva29yJTIwTmF0aW9uYWwlMjBQYXJrfGVufDB8fDB8fHww')] bg-center bg-no-repeat bg-cover rounded-lg h-[415px] overflow-hidden w-full p-5">
                                     <div className="title" data-swiper-parallax="-300">
-                                        <p className="absolute top-80 font-normal text-4xl text-white font-bebasNeue">Bokor National Park</p>
+                                        <p className="absolute top-72 font-normal text-4xl text-white font-bebasNeue">Bokor National Park</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
