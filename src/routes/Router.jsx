@@ -10,6 +10,7 @@ import MyList from "../pages/MyList/MyList"
 import PrivateRoute from "./PrivateRoute";
 import TouristSpotDetails from "../pages/AllTouristsSpot/TouristSpot/TouristSpotDetails"
 import UpdateTouristSpot from "../pages/MyList/UpdateTouristSpot/UpdateTouristSpot";
+import CountryTouristSpots from "../pages/Home/Countries/CountryTouristSpots";
 const router = createBrowserRouter([
     {
         path: '/',
@@ -56,6 +57,11 @@ const router = createBrowserRouter([
                 path: '/update_tourist_spot/:id',
                 element: <PrivateRoute><UpdateTouristSpot /></PrivateRoute>,
                 loader: () => fetch('https://assignment-10-server-blue-iota.vercel.app/tourist_spots')
+            },
+
+            {
+                path: '/countries/:country_name',
+                element: <PrivateRoute><CountryTouristSpots /></PrivateRoute>
             }
         ]
     }    

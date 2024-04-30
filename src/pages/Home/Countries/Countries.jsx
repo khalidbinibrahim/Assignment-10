@@ -17,7 +17,7 @@ const Countries = () => {
             <Fade direction="down" triggerOnce={true}>
                 <div className="mb-12">
                     <h2 className="font_playfair text-center text-[#131313] font-bold text-4xl mb-4">Countries Section</h2>
-                    <p className="font-poppins font-normal text-[#878787] text-center">Real estate is defined as the land and any permanent structures, like a home, or <br /> improvements attached to the land, whether natural or man-made.</p>
+                    <p className="font-poppins font-normal text-[#878787] text-center">A country is a distinct territory with defined borders, boundaries, people <br /> and government. Most countries are sovereign states while others make up one part of a larger state.</p>
                 </div>
             </Fade>
 
