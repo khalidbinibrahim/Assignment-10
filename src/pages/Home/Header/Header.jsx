@@ -1,28 +1,22 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Parallax, Navigation } from 'swiper/modules';
+import { NavLink } from "react-router-dom";
+import { Fade } from "react-awesome-reveal";
 
 import 'swiper/css';
 import 'swiper/css/bundle';
-import { useEffect } from "react";
-import Aos from "aos";
-import 'aos/dist/aos.css'
-import { NavLink } from "react-router-dom";
 
 const Header = () => {
-
-    useEffect(() =>{
-        Aos.init({duration: 1000});
-    }, [])
 
     return (
         <div>
             <div className="bg-[url('https://images.unsplash.com/photo-1538403495832-bf5b8818ff4b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHN3aXR6ZXJsYW5kfGVufDB8fDB8fHww')] bg-no-repeat bg-bottom bg-cover px-32 py-12 mb-12">
                 <div className="flex justify-between items-center">
                     <div>
-                        <h1 className="font-bebasNeue mb-5 text-6xl font-medium text-white" data-aos="fade-right">Travel Trove</h1>
-                        <p className="font-montserrat text-white font-medium mb-6" data-aos="fade-right">A tourism or travel website serves as an information hub for prospective <br /> travelers planning a getaway. Today, people travel for a range of <br /> experiences—babymoons, staycations, voluntourism or bleisure—you name it. <br /> So, provide as much relevant information as possible to help users plan their trips.</p>
-                        <NavLink to="/add_tourists_spot" className="btn font-montserrat bg-[#FBB804] text-black font-bold px-7 text-center border-none" data-aos="fade-right">Booking <i className="text-lg"><FaArrowRightLong /></i></NavLink>
+                        <Fade direction="down" triggerOnce={true}><h1 className="font-bebasNeue mb-5 text-6xl font-medium text-white">Travel Trove</h1></Fade>
+                        <p className="font-montserrat text-white font-medium mb-6">A tourism or travel website serves as an information hub for prospective <br /> travelers planning a getaway. Today, people travel for a range of <br /> experiences—babymoons, staycations, voluntourism or bleisure—you name it. <br /> So, provide as much relevant information as possible to help users plan their trips.</p>
+                        <Fade direction="up" triggerOnce={true}><NavLink to="/add_tourists_spot" className="btn font-montserrat bg-[#FBB804] text-black font-bold px-7 text-center border-none">Booking <i className="text-lg"><FaArrowRightLong /></i></NavLink></Fade>
                     </div>
 
                     <div className="w-[270px]">
@@ -252,7 +246,7 @@ const Header = () => {
                                     </div>
                                 </div>
                             </SwiperSlide>
-                            
+
                         </Swiper>
                     </div>
                 </div>

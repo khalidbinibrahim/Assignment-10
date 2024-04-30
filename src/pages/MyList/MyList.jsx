@@ -27,7 +27,7 @@ const MyList = () => {
                 }
             }
         };
-    
+
         fetchUserTouristSpots();
     }, [user]);
 
@@ -47,7 +47,7 @@ const MyList = () => {
             .then(data => {
                 console.log(data);
                 setUserTouristSpots(prev => prev.filter(item => item._id !== id));
-                toast.success('Your Tourist Spot Deleted Successfully')
+                toast.success('Your Tourist Spot Deleted Successfully');
             })
             .catch(error => {
                 console.error('There was a problem with the fetch operation:', error);
@@ -57,38 +57,38 @@ const MyList = () => {
     };
 
     return (
-        <div className="container text-center mx-auto w-8/12 my-14">
-            <div className="mx-8 my-10 px-14 py-8 border rounded-md border-gray-400 font-montserrat">
-            <h1 className="text-3xl font-bold my-4">Your List Here!</h1>
-            <table className="table-auto">
-                <thead>
-                    <tr>
-                        <th className="px-4 py-2">Name</th>
-                        <th className="px-4 py-2">Country</th>
-                        <th className="px-4 py-2">Location</th>
-                        <th className="px-4 py-2">Season</th>
-                        <th className="px-4 py-2">Total Visitors</th>
-                        <th className="px-4 py-2">Price</th>
-                        <th className="px-4 py-2">Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {userTouristSpots.map(touristSpot => (
-                        <tr key={touristSpot._id}>
-                            <td className="border px-4 py-2">{touristSpot.tourists_spot_name}</td>
-                            <td className="border px-4 py-2">{touristSpot.country_name}</td>
-                            <td className="border px-4 py-2">{touristSpot.location}</td>
-                            <td className="border px-4 py-2">{touristSpot.seasonality}</td>
-                            <td className="border px-4 py-2">{touristSpot.total_visitors_per_year}</td>
-                            <td className="border px-4 py-2">{touristSpot.average_cost}</td>
-                            <td className="border px-4 py-2">
-                                <NavLink to={`/update_tourist_spot/${touristSpot._id}`} className="btn text-blue-500 hover:text-blue-700 font-bold px-7 text-center rounded-md border-none mb-2">Update</NavLink>
-                                <button onClick={() => handleDelete(touristSpot._id)} className="btn text-red-500 hover:text-red-700 font-bold px-7 text-center rounded-md border-none">Delete</button>
-                            </td>
+        <div className="container mx-auto w-8/12 my-14">
+            <div className="mx-8 my-10 px-14 py-8 border rounded-md border-gray-400 font-montserrat text-center">
+                <h1 className="text-3xl font-bold my-4">Your List Here!</h1>
+                <table className="table-auto">
+                    <thead>
+                        <tr>
+                            <th className="px-4 py-2">Name</th>
+                            <th className="px-4 py-2">Country</th>
+                            <th className="px-4 py-2">Location</th>
+                            <th className="px-4 py-2">Season</th>
+                            <th className="px-4 py-2">Total Visitors</th>
+                            <th className="px-4 py-2">Price</th>
+                            <th className="px-4 py-2">Actions</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {userTouristSpots.map(touristSpot => (
+                            <tr key={touristSpot._id}>
+                                <td className="border px-4 py-2">{touristSpot.tourists_spot_name}</td>
+                                <td className="border px-4 py-2">{touristSpot.country_name}</td>
+                                <td className="border px-4 py-2">{touristSpot.location}</td>
+                                <td className="border px-4 py-2">{touristSpot.seasonality}</td>
+                                <td className="border px-4 py-2">{touristSpot.total_visitors_per_year}</td>
+                                <td className="border px-4 py-2">{touristSpot.average_cost}</td>
+                                <td className="border px-4 py-2">
+                                    <NavLink to={`/update_tourist_spot/${touristSpot._id}`} className="btn text-blue-500 hover:text-blue-700 font-bold px-7 text-center rounded-md border-none mb-2">Update</NavLink>
+                                    <button onClick={() => handleDelete(touristSpot._id)} className="btn text-red-500 hover:text-red-700 font-bold px-7 text-center rounded-md border-none">Delete</button>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
             </div>
         </div>
     );

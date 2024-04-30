@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import TouristSpot from "./TouristSpot/TouristSpot";
-import Aos from "aos";
-import 'aos/dist/aos.css';
+import { Fade } from "react-awesome-reveal";
 
 const AllTouristsSpot = () => {
     const [allTouristsSpot, setAllTouristsSpot] = useState([]);
@@ -9,13 +8,9 @@ const AllTouristsSpot = () => {
     const [sortOrder, setSortOrder] = useState("asc");
 
     useEffect(() => {
-        Aos.init({ duration: 1000 });
-    }, []);
-
-    useEffect(() => {
         fetch('https://assignment-10-server-blue-iota.vercel.app/tourist_spots')
-        .then(res => res.json())
-        .then(data => setAllTouristsSpot(data))
+            .then(res => res.json())
+            .then(data => setAllTouristsSpot(data))
     }, [])
 
     useEffect(() => {
@@ -34,20 +29,24 @@ const AllTouristsSpot = () => {
     };
 
     return (
-        <div data-aos="fade-down">
-            <div className="mb-12">
-                <h2 className="font_playfair text-center text-[#131313] font-bold text-4xl mb-4">All Tourists Spot</h2>
-                <div className="my-10 flex items-center justify-center font-montserrat font-semibold">
-                    <select onChange={handleSortChange} value={sortOrder}>
-                        <option value="asc">Sort by Average Cost (Ascending)</option>
-                        <option value="desc">Sort by Average Cost (Descending)</option>
-                    </select>
+        <div>
+            <Fade direction="down" triggerOnce={true}>
+                <div className="mb-12">
+                    <h2 className="font_playfair text-center text-[#131313] font-bold text-4xl mb-4">All Tourists Spot</h2>
+                    <div className="my-10 flex items-center justify-center font-montserrat font-semibold">
+                        <select onChange={handleSortChange} value={sortOrder}>
+                            <option value="asc">Sort by Average Cost (Ascending)</option>
+                            <option value="desc">Sort by Average Cost (Descending)</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
+            </Fade>
 
-            <div className="px-32 pb-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
-                {sortedTouristSpots.map(touristSpot => <TouristSpot key={touristSpot._id} touristSpot={touristSpot} />)}
-            </div>
+            <Fade direction="up" triggerOnce={true}>
+                <div className="px-32 pb-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    {sortedTouristSpots.map(touristSpot => <TouristSpot key={touristSpot._id} touristSpot={touristSpot} />)}
+                </div>
+            </Fade>
         </div>
     );
 };
