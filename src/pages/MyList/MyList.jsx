@@ -20,6 +20,7 @@ const MyList = () => {
                         throw new Error('Failed to fetch user tourist spots');
                     }
                     const data = await response.json();
+                    console.log(data); // Log the data received from the server
                     setUserTouristSpots(data);
                 } catch (error) {
                     console.error('Error fetching user tourist spots:', error.message);
@@ -57,7 +58,7 @@ const MyList = () => {
     };
 
     return (
-        <div className="container mx-auto w-8/12 my-14">
+        <div className="container mx-auto w-9/12 my-14">
             <div className="mx-8 my-10 px-14 py-8 border rounded-md border-gray-400 font-montserrat text-center">
                 <h1 className="text-3xl font-bold my-4">Your List Here!</h1>
                 <table className="table-auto">

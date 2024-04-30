@@ -1,20 +1,23 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import TextField from '@mui/material/TextField';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import { toast } from 'react-toastify';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const AddTouristsSpot = () => {
     const { register, handleSubmit, reset } = useForm();
     const [country, setCountry] = useState('');
+    const { user } = useContext(AuthContext);
 
     const onSubmit = (data) => {
         data.country_name = country;
+        data.user_id = user.uid;
         console.log(data);
         const { image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time } = data;
         console.log(image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time )
-        const touristSpot = { image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time };
+        const touristSpot = { image, average_cost, country_name, location, seasonality, short_description, total_visitors_per_year, tourists_spot_name, travel_time, user_id: user.uid }; // Include user_id in tourist spot data
 
         fetch('https://assignment-10-server-blue-iota.vercel.app/tourist_spots', {
             method: "POST",
@@ -50,7 +53,7 @@ const AddTouristsSpot = () => {
 
     return (
         <div className='mx-8 lg:mx-96 my-10 px-10 py-8 border rounded-md border-gray-400 font-montserrat'>
-            <h1 className='mb-6 font-bold text-black text-2xl'>Add Tourists Spot</h1>
+            <h1 className='mb-6 font-bold text-black text-2xl'>Add Tourist Spot</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form grid grid-cols-2 gap-6 items-center justify-center">
                 <div className="form-group">
                     <TextField
