@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
-import { MdOutlineTravelExplore } from "react-icons/md";
-import { useContext } from "react";
+import { MdOutlineTravelExplore, MdDarkMode } from "react-icons/md";
+import { FaRegLightbulb } from "react-icons/fa";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { toast } from "react-toastify";
 import { Fade } from "react-awesome-reveal";
@@ -9,6 +10,15 @@ import 'react-tooltip/dist/react-tooltip.css'
 
 const Navigation = () => {
     const { user, logOut } = useContext(AuthContext);
+    const [theme, setTheme] = useState('light');
+
+    const toggleTheme = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+    };
+
+    useEffect(() => {
+        document.querySelector('html').setAttribute('data-theme', theme);
+    }, [theme]);
 
     const handleLogOut = () => {
         logOut()
@@ -51,6 +61,12 @@ const Navigation = () => {
                 </Fade>
             </div>
             <div className="navbar-end">
+            <label className="swap swap-rotate mr-4">
+                    <input onClick={toggleTheme} type="checkbox" />
+                    <div className="swap-on text-3xl"><MdDarkMode /></div>
+                    <div className="swap-off text-3xl"><FaRegLightbulb /></div>
+                </label>
+
                 {
                     user ?
                         <div className="flex gap-2 items-center">
@@ -58,7 +74,7 @@ const Navigation = () => {
                             <NavLink to="/update_profile">
                                 <img id="userPhoto" alt="" src={user?.photoURL ? user.photoURL : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} className="w-14 h-14 rounded-full" />
                             </NavLink>
-                            <Tooltip 
+                            <Tooltip
                                 anchorId="userPhoto"
                                 place="top"
                                 content={user.displayName}
