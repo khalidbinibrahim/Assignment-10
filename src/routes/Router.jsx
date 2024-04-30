@@ -8,7 +8,7 @@ import AddTouristsSpot from "../pages/AddTouristsSpot/AddTouristsSpot"
 import AllTouristsSpot from "../pages/AllTouristsSpot/AllTouristsSpot"
 import MyList from "../pages/MyList/MyList"
 import PrivateRoute from "./PrivateRoute";
-import TouristSpotDetails from "../pages/AllTouristsSpot/TouristsSpots/TouristSpotDetails";
+import TouristSpotDetails from "../pages/AllTouristsSpot/TouristSpot/TouristSpotDetails"
 import UpdateTouristSpot from "../pages/MyList/UpdateTouristSpot/UpdateTouristSpot";
 const router = createBrowserRouter([
     {

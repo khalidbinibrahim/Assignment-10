@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import TouristSpot from "./TouristsSpots/TouristSpot";
+import TouristSpot from "./TouristSpot/TouristSpot";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
