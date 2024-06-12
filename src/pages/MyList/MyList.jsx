@@ -59,7 +59,7 @@ const MyList = () => {
 
     return (
         <div className="container mx-auto w-9/12 my-14">
-            <div className="mx-8 my-10 px-14 py-8 border rounded-md border-gray-400 font-montserrat text-center">
+            <div className="my-10 px-36 py-8 border rounded-md border-gray-400 font-montserrat text-center">
                 <h1 className="text-3xl font-bold my-4">Your List Here!</h1>
                 <table className="table-auto">
                     <thead>

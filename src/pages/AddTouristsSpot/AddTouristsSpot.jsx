@@ -35,7 +35,7 @@ const AddTouristsSpot = () => {
             .then(data => {
                 console.log(data);
                 if (data.insertedId) {
-                    toast.success('Tourists Spot created Successfully');
+                    toast.success('Tourists Spot added Successfully');
                     reset();
                 } else {
                     toast.error('Tourist Spot is not created! Try Again');

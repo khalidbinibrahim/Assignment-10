@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { MdOutlineTravelExplore, MdDarkMode } from "react-icons/md";
-import { FaRegLightbulb } from "react-icons/fa";
+import { MdDarkMode } from "react-icons/md";
+import { FiSun } from "react-icons/fi";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { toast } from "react-toastify";
@@ -42,19 +42,18 @@ const Navigation = () => {
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <Fade cascade damping={0.1}>
+                    <Fade cascade damping={0.1} triggerOnce={true}>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             {navLinks}
                         </ul>
                     </Fade>
                 </div>
-                <div className="flex gap-2 items-center mr-6 text-3xl">
-                    <MdOutlineTravelExplore className="text-4xl" />
-                    <a className="font-bold text-[#131313] font-montserrat">TravelTrove</a>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0cp8a41XgBmBQSUjk_CfJaCAxhOdY0b7v-g&s" height={220} width={200} alt="" />
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex mr-4 ml-4">
-                <Fade cascade damping={0.2}>
+                <Fade cascade damping={0.2} triggerOnce={true}>
                     <ul className="menu menu-horizontal px-1">
                         {navLinks}
                     </ul>
@@ -64,7 +63,7 @@ const Navigation = () => {
             <label className="swap swap-rotate mr-4">
                     <input onClick={toggleTheme} type="checkbox" />
                     <div className="swap-on text-3xl"><MdDarkMode /></div>
-                    <div className="swap-off text-3xl"><FaRegLightbulb /></div>
+                    <div className="swap-off text-3xl"><FiSun /></div>
                 </label>
 
                 {
