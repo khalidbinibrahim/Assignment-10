@@ -17,5 +17,11 @@
 
 ## I have uploaded these Npm packages on my website -
 
-#### 1. React-tooltip
-#### 2. React-awesome-reveal
+#### 1. react-tooltip
+#### 2. react-awesome-reveal
+#### 3. react-hook-form
+#### 4. swiper
+#### 5. aos
+#### 6. @mui/material
+#### 7. react-toastify
+#### 8. firebase-auth
