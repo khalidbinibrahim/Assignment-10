@@ -16,4 +16,4 @@
 
 ## Technologies Added -
 
-#### 1. ReactJS, Tailwind, Firebase, daisyUI, Node.js, Express.js, MongoDB, MUI etc.
+#### ReactJS, Tailwind, Firebase, daisyUI, Node.js, Express.js, MongoDB, MUI etc.
